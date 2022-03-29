@@ -1,1 +1,3 @@
+from Test2 import product
+product("numbers.txt")
 
