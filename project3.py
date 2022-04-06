@@ -1,14 +1,21 @@
-
-from math import sqrt
-
-a = float(input("Enter the value of a "))
-b = float(input("Enter the value of b "))
-c = float(input("Enter the value of c "))
-
-d = (b**2) - (4*a*c)
+from cmath import sqrt
 
 
-sol1 = (-b-sqrt(d))/(2*a)
-sol2 = (-b+sqrt(d))/(2*a)
+NotNumber = True
 
-print("your two soloutions are: ", sol1,sol2)
+
+while NotNumber:
+  try:
+    a = float(input("Enter the value of a: \n"))
+    b = float(input("Enter the value of b: \n"))
+    c = float(input("Enter the value of c: \n"))
+
+    Value = (b**2)-(4*a*c)
+    s1 = (-b+sqrt(Value)/(2*a))
+    s2 = (-b-sqrt(Value)/(2*a))
+
+    print(s1,s2)
+    NotNumber = False 
+
+  except:
+        print("That's Not A Number Please Enter A Number \n")
