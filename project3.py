@@ -1,4 +1,4 @@
-from cmath import sqrt
+from math import sqrt
 
 
 NotNumber = True
@@ -18,4 +18,4 @@ while NotNumber:
     NotNumber = False 
 
   except:
-        print("That's Not A Number Please Enter A Number \n")
+        print("There Are no roots \n")
