@@ -1,10 +1,13 @@
+#Sulieman Project #3
+#04-06-2022
+
 from math import sqrt
 
 
-NoRoots = True
+NoRoot = True
 
 
-while NoRoots:
+while NoRoot:
   try:
     a = float(input("Enter the value of a: \n"))
     b = float(input("Enter the value of b: \n"))
@@ -14,8 +17,8 @@ while NoRoots:
     s1 = (-b+sqrt(Value)/(2*a))
     s2 = (-b-sqrt(Value)/(2*a))
 
-    print(s1,s2)
-    NoRoots = False 
+    print((s1,s2))
+    NoRoot = False 
 
   except:
         print("There Are no roots \n")
